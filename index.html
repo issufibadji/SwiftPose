@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimativa de Pose - Ferramenta de Análise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Estimativa de Pose com Transformers.js</h1>
+        <p class="description">Carregue uma imagem para analisar a pose das pessoas.</p>
+
+        <div class="upload-section">
+            <label class="custom-file-upload">
+                <input id="file-upload" type="file" accept="image/*">
+                <span>Carregue uma imagem</span>
+            </label>
+        </div>
+
+        <!-- Seções de resultado -->
+        <h2>Saída 1: Keypoints</h2>
+        <div id="keypoints-container" class="result-container"></div>
+
+        <h2>Saída 2: Esqueleto</h2>
+        <div id="skeleto-container" class="result-container"></div>
+
+        <h2>Saída 3: Mapa de Calor</h2>
+        <div id="heatmap-container" class="result-container"></div>
+
+        <p id="status">Nenhum arquivo carregado ainda.</p>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
